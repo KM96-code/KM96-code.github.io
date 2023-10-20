@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(242, 246, 185);
+    cursor: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+} /* change*/
+
+.intro{text-align: center;
+    font-size: 30px;
+line-height: 10px;
+background-color: rgb(238, 218, 43);
+padding: 25px 0 25px;
+}
+
+div .subtitle {font-style: italic;
+    font-family: 'Times New Roman', Times, serif ;
+font-size: 0.75em;} /*improve*/
+
+a:link{color:#0077B5;} /*unvisited link*/
+a:visited{color:#0077B5;} /*unvisited link*/
+a:hover{background-color: rgb(220, 245, 245), opacity=50%;} /*while hovering*/
+a:active{color: red;} /*spplit second when link is clicked*/
+
+.social-icon{
+    font-size: large;
+    vertical-align: middle;
+    margin-right: 20px;
+    padding-right: 10px ;
+    
+}
+icon-linkedin::before{
+    content: "\f08c/";
+    font-family: 'Font Awesome';
+    color:#0077B5;
+}
+
+icon-medium::before{
+    content: "\f23a/";
+    font-family: 'Font Awesome';
+    color:#002c72;
+}
+
+.rounded{
+    width: 30px;
+    height: 30px;
+    background-color: orangered;
+    border: 5px solid orange;
+    border-radius: 50%;
+}
+
+.pointed{
+    width:7px;
+    height: 7px;
+    background-color: orangered;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+button{
+    font-size: 1.15rem;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+/* cursor learned from https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/ */
