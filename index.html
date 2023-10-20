@@ -3,12 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" type="text/css" href="MyProject_CSS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Kalyani Mathur</title>
     </head>
     <body>
         <div class="intro">
             <h1>Kalyani Mathur</h1>
-        
+        <p class="subtitle">A space to experiment and explore</p>
+        </div>
+        <div class="cursor rounded"></div>
+        <div class="cursor pointed"></div>
+        <div class="discover">
+            <h2>Find out more about me on:</h2>
+                <ul>
+                    <li><a target="_blank" href="https://medium.com/@kalyani11mathur" class="social-icon si-medium"><i class="fa-brands fa-medium"></i>Medium</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/kalyani-mathur-829b4a115/" class="social-icon si-linkedin"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                </ul> 
+        </div>
+        <div id="game">
+            <!--<h3>Let's Play!</h3>
+            <table id="game-table">  
+            </table>-->
+        </div>
+        <div>
+            <h2>Pick a new Background Colour:</h2>
+            <input id="colorInput" type="color">
+            <button onclick="selectColor()"> Change Background Colour</button>
+        </div>
+        <script src="MyProjectJS.js">
+        </script>
     </body>
 </html>
