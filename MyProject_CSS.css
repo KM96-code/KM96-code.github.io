@@ -15,6 +15,11 @@ div .subtitle {font-style: italic;
     font-family: 'Times New Roman', Times, serif ;
 font-size: 0.75em;} /*improve*/
 
+.projects{
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 a:link{color:#0077B5;} /*unvisited link*/
 a:visited{color:#0077B5;} /*unvisited link*/
 a:hover{background-color: rgb(220, 245, 245), opacity=50%;} /*while hovering*/
