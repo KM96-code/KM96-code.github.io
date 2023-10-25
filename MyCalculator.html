@@ -1,0 +1,100 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>My Calculator</title>
+        <style>
+            .container{
+                width: 200px;
+                height: 210px;
+                background-color:bisque ;
+                border: #000000 solid 3px;
+                margin: auto;
+                padding: 10px;
+                box-shadow: rgba(0,0,0,20) 0px 10px 20px;
+            }
+            #result{ 
+                
+                height:20px;
+                background-color: aliceblue;
+                padding: 10px;
+            }
+            .num, .operator, #equals{
+                width: 25px;
+                height: 25px;
+                border: black solid 1px;
+                border-radius: 50%;
+                margin: 2px 2px;
+                box-shadow: rgba(0,0,0) 5px 5px 5px;
+                /* padding: 2px; */
+            }
+            #result, .operator, #equals, #clear{
+                border-radius: 0;
+                border: black solid 2px;
+                box-shadow: rgba(0,0,0) 5px 5px 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                <table>
+                    <thead>
+                        <td colspan="5"><input id="result" type="text" placeholder="Result" ></td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button class="num" id="seven" onclick="display('7')">7</button></td>
+                            <td><button class="num" id="eight" onclick="display('8')">8</button></td>
+                            <td><button class="num" id="nine" onclick="display('9')">9</button></td>
+                            <td><button class="num" id="divide" onclick="display('/')">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="num" id="four" onclick="display('4')">4</button></td>
+                            <td><button class="num" id="five" onclick="display('5')">5</button></td>
+                            <td><button class="num" id="six" onclick="display('6')">6</button></td>
+                            <td><button class="operator" id="multiply" onclick="display('*')">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="num" id="one" onclick="display('1')">1</button></td>
+                            <td><button class="num" id="two" onclick="display('2')">2</button></td>
+                            <td><button class="num" id="three" onclick="display('3')">3</button></td>
+                            <td><button class="operator" id="subtract" onclick="display('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="num" id="zero" onclick="display('0')">0</button></td>
+                            <td><button class="num" id="decimal" onclick="display('.')">.</button></td>
+                            <td><button id="equals" onclick="calculate()">=</button></td>
+                            <td><button class="operator" id="add" onclick="display('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="clear" onclick="clearScreen()">Clear All</button></td>
+                            <!--<td colspan="2"><button id="back" onclick="
+                                if (document.container.result.value.length>0)
+                                    document.container.result.value.substr(0,document.container.result.value.length-1);
+                                    ">Backspace</button></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        <script>
+            // This function clears all the values
+            function clearScreen() {
+                document.getElementById("result").value = "";
+            }
+            
+            // This function displays the values
+            function display(value) {
+                document.getElementById("result").value += value;
+            }
+            
+            // This function evaluates the expression and returns the result
+            function calculate() {
+                var p = document.getElementById("result").value;
+                var q = eval(p);
+                document.getElementById("result").value = q;
+            }
+        </script> 
+    </body>
+</html>
