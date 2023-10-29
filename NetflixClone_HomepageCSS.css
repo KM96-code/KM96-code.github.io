@@ -1,0 +1,100 @@
+body{background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner{
+    background-image: url('netflix-images/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    object-fit: contain;
+    color: white;
+}
+
+.bannerContents{
+    margin-left: 30px;
+   padding-top: 150px; 
+   border: none;
+}
+
+button{
+    font-size: larger;
+    border-radius: 10%;
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.show:hover{
+    background-color: rgba(254, 251, 251, 0.715); opacity:50%;
+} /*while hovering*/
+
+#play{
+    background-color: rgba(239, 238, 238, 0.411);
+    color: black;
+}
+
+#myList{
+    background-color: rgb(164, 164, 164, 0.21);
+    color: white;
+    margin-left: 10px;
+}
+
+h2{color:white;
+    margin-left: 1%;
+    font-size: medium;
+}
+.poster{
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 400ms;
+}
+.row{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;  
+}
+.row::-webkit-scrollbar{
+    display: none;
+}
+.trendingnow{
+    max-height: 250px;
+}
+.poster:hover{
+    transform: scale(1.10);
+}
+.trendingnow:hover{
+    transform: scale(1.15);
+}
+
+nav{
+    position: fixed;
+    top:0;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    /*margin-bottom: 100px;*/
+    color: white;
+    padding: 5px;
+    z-index: 1;
+    background-color: black;
+    cursor: pointer;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    /*padding-bottom: 10px;*/
+    margin-right: 20px;
+    margin-top: 5px;
+}
