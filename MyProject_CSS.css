@@ -4,6 +4,12 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 } /* change*/
 
+@media screen and (max-width: 768px){
+    #container{
+    width:90%;
+    }
+}
+
 .intro{text-align: center;
     font-size: 30px;
 line-height: 10px;
